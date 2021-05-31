@@ -38,6 +38,25 @@ int main(void) {
     }
   }
 }
+float mc_pi(int n){
+   float x,y,dist,pi,ratio;
+   float count_inc=0;
+   
+   for (int i=0;i<=n;i++){
+        x=frandom();
+	y=frandom();
+	dist=sqrt((x*x) +(y*y));
+	   if (dist<1){
+	   	count_inc=count_inc+1;
+	   	        }
+	   	   }
+	 ratio=count_inc/n;
+	 pi=4*ratio;
+	 return pi;
+   
+   
+
+}
 
 
 
