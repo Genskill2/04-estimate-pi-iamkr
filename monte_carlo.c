@@ -53,9 +53,6 @@ float mc_pi(int n){
 	 ratio=count_inc/n;
 	 pi=4*ratio;
 	 return pi;
-   
-   
-
 }
 
 
