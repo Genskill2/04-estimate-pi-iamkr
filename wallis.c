@@ -23,4 +23,23 @@ int main(void) {
     }
   }
 }
+float wallis_pi(int n) {
+	float num,den,temp,pi=0;
+	
+
+    for (int i=1; i<n;i++){
+    	num= 4*pow(i,2);
+    	den=4*pow(i,2)- 1;
+    	temp=num/den;
+    	
+    	if(i==1){
+    	    pi=temp;
+    	}
+    	else{
+    	    pi=temp*pi;
+    	    }
+     	}
+    pi=pi*2;
+    return pi;
+}
 
