@@ -49,7 +49,7 @@ float mc_pi(int n){
 	   if (dist<1){
 	   	count_inc=count_inc+1;
 	   	        }
-	   	   }
+   }
 	 ratio=count_inc/n;
 	 pi=4*ratio;
 	 return pi;
